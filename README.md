@@ -42,4 +42,16 @@
     1. Create a public folder under root
     2. Create an HTML file
     3. Configure express to serve static content
-
+# Route Setup
+1. Summary
+    * GET Request
+    *  Request Parameters
+    *  Query Parameters
+    
+2. `npm i nodemon -D `
+    * only run "nodemon" in development
+3. add this script to package.json
+    * `"start-watch": "nodemon src/index.js",`
+    * we did this avoid having to keep stopping and restarting
+    our server when we make changes.
+ 
