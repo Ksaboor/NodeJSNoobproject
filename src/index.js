@@ -5,9 +5,13 @@ let app = express()
 // now we our going to reference the person route in our index.js file
 let personRoute = require('./routes/person')
 
+//below we are logging the routes
+app.use((request, response, next) =>{
+    console.log(`${new Date().toString()} => ${request.originalUrl}`)
+    next()
+})
 //here we tell express to register this route
 app.use(personRoute)
-
 app.use(express.static('public'))
 
 // now we are going to point this to our local port

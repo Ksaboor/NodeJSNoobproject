@@ -53,5 +53,12 @@
 3. add this script to package.json
     * `"start-watch": "nodemon src/index.js",`
     * we did this avoid having to keep stopping and restarting
-    our server when we make changes.
+    our server when we make changes. 
+4. Get Route by name and Query String
+    * ``router.get('/person/:name', (request, response) => {
+            response.send(`You have request a person name Carson Wentz ${request.params.name}`)
+        })``
+    
+    * Query String => query property on the request object
  
+#Middleware
